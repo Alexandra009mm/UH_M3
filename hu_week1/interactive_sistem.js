@@ -7,7 +7,7 @@ if (age !==null && age == false){ //if
      let age_valid = Number(age);
 
 }else{
-    console.error("you didn't enter valid value, try again please.");
+    console.error("you didn't enter valid value, try again please.");  //
 }
 
 if (age_valid >= 18){
