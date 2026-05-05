@@ -59,6 +59,8 @@ function loadMore() {
     }
 }
 
+
+
 /*¿Qué pasa si quieres cambiar a otra API?
 Si decides usar otra API (por ejemplo, la de Pokémon o una de películas), debes tener cuidado porque no todas las APIs tienen la misma estructura. Aquí los puntos clave que tendrías que editar:
 
