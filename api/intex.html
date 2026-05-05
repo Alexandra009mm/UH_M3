@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body >
+
+    <main>
+        <ul id="character"></ul>
+        <button id="loadMore" data-next="" data-prev="" onclick="loadMore()">Cargar más</button>
+    </main>
+    <script src="api.js"></script>
+
+</body>
+</html>
+
+
+<!--2. El <body> (Lo que el usuario ve)
+Aquí es donde ocurre la magia de la estructura.
+
+La lista de personajes (<ul>)
+HTML
+
+<ul id="character"></ul>
+Este elemento está vacío al principio.
+
+Tiene el id="character", que funciona como una "etiqueta de nombre". Gracias a este ID, tu función de JavaScript puede encontrarlo usando document.getElementById("character") e inyectar los <li> con las fotos y nombres dentro.
+
+El botón inteligente (<button>)
+HTML
+
+<button id="loadMore" data-next="" data-prev="" onclick="loadMore()">Cargar más</button>
+Este es el elemento más interesante de tu HTML por tres razones:
+
+id="loadMore": Igual que la lista, sirve para que el JS lo identifique.
+
+data-next y data-prev: Son atributos personalizados (llamados dataset). Aquí es donde el JavaScript "esconde" la dirección URL de la siguiente página de personajes. Empiezan vacíos y se llenan automáticamente al recibir datos de la API.
+
+onclick="loadMore()": Es el disparador. Le dice al navegador: "Cuando el usuario haga clic aquí, ejecuta la función llamada loadMore que está en mi archivo JS".
+
+3. El <script> (El motor)
+HTML
+
+<script src="api.js"></script>
+Ubicación: Se pone al final (justo antes de cerrar el </body>) para asegurar que el HTML se cargue primero.
+
+Si lo pusieras arriba, el JavaScript intentaría buscar el elemento id="character" antes de que este existiera, y te daría un error.
+
+¿Cómo interactúan el HTML y el JS?
+Para que lo visualices mejor, imagina que el HTML es una estantería vacía y el JS es el empleado que va a la bodega (la API) a traer cajas.
+
+El Navegador lee el HTML y crea la estantería vacía (<ul>).
+
+El Script (api.js) se ejecuta, llama a la API de Rick & Morty.
+
+El Script escribe dentro del <ul> cada personaje como si fueran piezas de Lego (<li>).
+
+El Script anota en el botón (data-next) cuál es el siguiente pasillo de la bodega que debe visitar si el usuario hace clic.
+
+Si cambias de API...
+Lo único que realmente tendrías que cambiar en este HTML es la estructura dentro de la lista si decides que no quieres usar una lista de etiquetas <li>. Por ejemplo, si prefieres usar contenedores <div> para hacer tarjetas (cards) más complejas. El resto (los IDs y el botón) puede quedarse exactamente igual.-->

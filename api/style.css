@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    border: 1px solid black;
+    margin: 10px;
+    background-color: beige;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+img {
+    border-radius: 16px;
+}
+ul#character {
+    display: flex;
+    flex-wrap: wrap;
+}
